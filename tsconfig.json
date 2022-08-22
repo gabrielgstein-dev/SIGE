@@ -23,9 +23,12 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "~/*": ["src/*"]
+      "~/*": ["src/*"],
+      "@theme": ["src/theme"],
+      "@theme/*": ["src/theme/*"],
+      "@atoms": ["src/framework/atoms"]
     }
   },
-  "include": ["vite.config.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["vite.config.ts", "styled.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }

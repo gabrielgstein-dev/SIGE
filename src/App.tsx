@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import { Gateway } from './routes';
-import { GlobalStyles, theme } from 'src/theme';
+import { GlobalStyles, theme } from '@theme';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
