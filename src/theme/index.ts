@@ -1,5 +1,5 @@
 import { fontFamily } from './fontFamily';
-import { colors } from './colors';
+import { colors } from './light/palette';
 import { input } from './components';
 
 export * from './global';
