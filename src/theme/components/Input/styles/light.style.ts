@@ -1,11 +1,12 @@
-import { css, FlattenSimpleInterpolation } from 'styled-components';
-import { theme } from '@theme';
+import { css, DefaultTheme, FlattenInterpolation, ThemeProps } from 'styled-components';
 
-export const lightTheme: FlattenSimpleInterpolation = css`
-  background-color: #f7f7f7;
-  border-radius: 6px;
-  padding: 8px 16px;
-  border: none;
+export const lightTheme: FlattenInterpolation<ThemeProps<DefaultTheme>> = css`
+  ${({ theme }) => css`
+    background-color: #f7f7f7;
+    border-radius: 6px;
+    padding: 8px 16px;
+    border: none;
 
-  color: ${theme.colors.black};
+    color: ${theme.palette.dark.tint};
+  `}
 `;

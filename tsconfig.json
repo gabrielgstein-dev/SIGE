@@ -26,7 +26,10 @@
       "~/*": ["src/*"],
       "@theme": ["src/theme"],
       "@theme/*": ["src/theme/*"],
-      "@atoms": ["src/framework/atoms"]
+      "@atoms": ["src/framework/atoms"],
+      "@atoms/*": ["src/framework/atoms/*"],
+      "@molecules": ["src/framework/molecules"],
+      "@molecules/*": ["src/framework/molecules/*"]
     }
   },
   "include": ["vite.config.ts", "styled.d.ts", "**/*.ts", "**/*.tsx"],

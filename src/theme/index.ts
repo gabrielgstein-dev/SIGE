@@ -1,5 +1,5 @@
 import { fontFamily } from './fontFamily';
-import { colors } from './light/palette';
+import { palette } from './light/palette';
 import { input } from './components';
 
 export * from './global';
@@ -9,5 +9,5 @@ export const theme = {
     input: input.lightTheme,
   },
   fontFamily,
-  colors,
+  palette,
 };

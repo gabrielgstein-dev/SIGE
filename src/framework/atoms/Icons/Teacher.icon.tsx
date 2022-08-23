@@ -1,6 +1,6 @@
 import { SVGProps } from 'react';
 
-export const UserTagIcon = ({ color, ...props }: SVGProps<SVGSVGElement>) => (
+export const TeacherIcon = ({ color, ...props }: SVGProps<SVGSVGElement>) => (
   <svg
     width='24'
     height='24'

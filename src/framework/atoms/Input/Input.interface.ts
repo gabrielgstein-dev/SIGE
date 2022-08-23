@@ -3,5 +3,4 @@ export interface InputProps {
   value: string;
   placeholder?: string;
   disabled?: boolean;
-  label?: string;
 }
