@@ -10,12 +10,7 @@ export const LoginPage: React.FC = () => {
   return (
     <S.Container>
       <S.LeftSide>
-        <Button
-          variant='outlined'
-          label={'Aqui sim'}
-          onClick={handleOnclick}
-          rightIcon={<Icons.CheckIcon />}
-        />
+        <Button label={'Aqui sim'} onClick={handleOnclick} rightIcon={<Icons.CheckIcon />} />
       </S.LeftSide>
       <S.RightSide>s</S.RightSide>
     </S.Container>
