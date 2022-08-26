@@ -15,3 +15,9 @@ export const RightSide = styled.div`
   background-color: #b8dffd;
   flex-grow: 2;
 `;
+
+export const CustomLabel = styled.div`
+  color: purple;
+  font-size: 22px;
+  text-align: center;
+`;
