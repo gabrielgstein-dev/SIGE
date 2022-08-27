@@ -31,7 +31,9 @@
       "@molecules": ["src/framework/molecules"],
       "@molecules/*": ["src/framework/molecules/*"],
       "@organisms": ["src/framework/organisms"],
-      "@organisms/*": ["src/framework/organisms/*"]
+      "@organisms/*": ["src/framework/organisms/*"],
+      "@templates": ["src/framework/templates"],
+      "@templates/*": ["src/framework/templates/*"]
     }
   },
   "include": ["vite.config.ts", "styled.d.ts", "**/*.ts", "**/*.tsx"],

@@ -7,19 +7,18 @@ import { FormLoginProps } from './FormLogin.interface';
 
 export const FormLogin: React.FC<FormLoginProps> = ({
   onSubmit,
-  children,
+  action,
   title = "Entre ou cadastre-se",
   paragraph = "Digite seus dados cadastrais para realizar seu login",
   buttonLoginText = "Entrar",
   buttonRegisterText = "Cadastrar-se",
-  buttonForgotPasswordText = "Esqueci a senha",
-  ...props
+  buttonForgotPasswordText = "Esqueci a senha"
 }) => {
   function handleChange() {
     console.log("oi hihi");
   }
   return (
-    <FormContainer>
+    <FormContainer onSubmit={onSubmit} action={action}>
       <Title>{title}</Title>
       <Paragraph>{paragraph}</Paragraph>
       <div style={{marginTop: `40px`}}>
