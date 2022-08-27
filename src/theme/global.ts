@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+      @import url('http://fonts.cdnfonts.com/css/futura-pt');
+
       * {
         margin: 0;
         padding: 0;

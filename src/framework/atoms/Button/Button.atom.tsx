@@ -10,9 +10,10 @@ export const Button: React.FC<ButtonProps> = ({
   leftIcon,
   rightIcon,
   variant,
+  style,
 }) => {
   return (
-    <S.Button disabled={disabled} onClick={onClick} variant={variant}>
+    <S.Button disabled={disabled} onClick={onClick} variant={variant} style={style}>
       {leftIcon && <S.LeftIconContainer>{leftIcon}</S.LeftIconContainer>}
       {label}
       {rightIcon && <S.RightIconContainer>{rightIcon}</S.RightIconContainer>}

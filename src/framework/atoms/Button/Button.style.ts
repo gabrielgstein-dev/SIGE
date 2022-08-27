@@ -86,7 +86,7 @@ export const getVariant = (variant: VariantType) => {
 };
 
 export const Button = styled.button<ButtonInternalProps>`
-  ${({ theme, variant = VariantButtonEnum.PRIMARY }) => css`
+  ${({ variant = VariantButtonEnum.PRIMARY }) => css`
     ${getVariant(variant)}
     font-weight: 600;
     width: 100%;

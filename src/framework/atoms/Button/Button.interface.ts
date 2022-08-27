@@ -19,9 +19,10 @@ export interface ButtonInternalProps {
   disabled?: boolean;
 }
 
-export interface ButtonProps extends ButtonInternalProps {
+export interface ButtonProps extends React.Component<HTMLButtonElement>, ButtonInternalProps {
   onClick: () => void;
   label?: string;
+  style?: React.CSSProperties;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
 }
