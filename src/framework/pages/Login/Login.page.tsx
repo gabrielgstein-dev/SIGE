@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Icons } from '@atoms';
-import { InputSelect } from '@molecules';
 import * as S from './Login.style';
 
 export const LoginPage: React.FC = () => {
