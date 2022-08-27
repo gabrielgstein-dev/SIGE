@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   default as ReactSelect,
   components,
@@ -32,10 +31,6 @@ export const InputSelect: React.FC<Props> = () => {
   const [optionsValue, setOptionsValue] = useState<MultiValue<PropertyType>>();
   const handleChange = (prop: MultiValue<PropertyType>) => {
     setOptionsValue(prop);
-  };
-
-  const handleSingleChange = (value: OptionType<PropertyType>) => {
-    console.log(value);
   };
 
   const Option = (props: OptionProps<PropertyType>) => {
