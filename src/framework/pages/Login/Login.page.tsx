@@ -10,7 +10,8 @@ export const LoginPage: React.FC = () => {
   return (
     <S.Container>
       <S.LeftSide>
-        <Button label={'Aqui sim'} onClick={handleOnclick} rightIcon={<Icons.CheckIcon />} variant={`text`} disabled={true} />
+        <Button label={'Aqui sim'} onClick={handleOnclick} rightIcon={<Icons.CheckIcon />} variant={`primary`} disabled={true} />
+        <Button label={'Aqui sim'} onClick={handleOnclick} rightIcon={<Icons.CheckIcon />} variant={`small-primary`} disabled={true} />
       </S.LeftSide>
       <S.RightSide>s</S.RightSide>
     </S.Container>
