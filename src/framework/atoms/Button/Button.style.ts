@@ -31,7 +31,10 @@ export const getVariant = (variant: VariantType) => {
 
           &:hover {
             background: ${theme.palette.primary.shade};
-            box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+          }
+
+          &:disabled {
+            background-color: #A0A0A0;
           }
         `}
       `
@@ -48,6 +51,12 @@ export const getVariant = (variant: VariantType) => {
           box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
           border-radius: 20px;
           border: 1px solid ${theme.palette.primary.base};
+
+          &:disabled {
+            background-color: #E4E4E4;
+            color: #A0A0A0;
+            border-color: #E4E4E4;
+          }
         `}
       `;
     
@@ -64,6 +73,10 @@ export const getVariant = (variant: VariantType) => {
             &:hover {
               color: ${theme.palette.primary.shade};
             }
+
+            &:disabled {
+              color: #E4E4E4;
+            }
           `}
         `;
 
@@ -78,6 +91,10 @@ export const Button = styled.button<ButtonInternalProps>`
     font-weight: 600;
     width: 100%;
     cursor: pointer;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
     
   `}
 `;
