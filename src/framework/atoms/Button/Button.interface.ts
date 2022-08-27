@@ -1,12 +1,12 @@
 export enum VariantButtonEnum {
   PRIMARY = 'primary',
-  OUTLINED = 'outlined',
+  SECONDARY = 'secondary',
   TEXT = 'text',
 }
 
 export type VariantType =
   | VariantButtonEnum.PRIMARY
-  | VariantButtonEnum.OUTLINED
+  | VariantButtonEnum.SECONDARY
   | VariantButtonEnum.TEXT;
 
 export interface ButtonInternalProps {

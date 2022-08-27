@@ -11,10 +11,15 @@ export const getVariant = (variant: VariantType) => {
           box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
           border-radius: 20px;
           border: none;
+
+          &:hover {
+            background: ${theme.palette.primary.shade};
+            box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
+          }
         `}
       `;
 
-    case VariantButtonEnum.OUTLINED:
+    case VariantButtonEnum.SECONDARY:
       return css`
         ${({ theme }) => css`
           color: ${theme.palette.primary.base};
@@ -24,6 +29,19 @@ export const getVariant = (variant: VariantType) => {
           border: 1px solid ${theme.palette.primary.base};
         `}
       `;
+    
+      case VariantButtonEnum.TEXT:
+        return css`
+          ${({ theme }) => css`
+            background-color: ${theme.palette.light.tint};
+            color: ${theme.palette.primary.base};
+            border: none;
+
+            &:hover {
+              color: ${theme.palette.primary.shade};
+            }
+          `}
+        `;
 
     default:
       break;
@@ -41,11 +59,6 @@ export const Button = styled.button<ButtonInternalProps>`
     padding: 15px 0px;
 
     cursor: pointer;
-
-    &:hover {
-      background: ${theme.palette.primary.shade};
-      box-shadow: 0px 0px 1px rgba(12, 26, 75, 0.24), 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
-    }
   `}
 `;
 
