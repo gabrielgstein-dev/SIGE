@@ -1,5 +1,6 @@
 import React from 'react';
 import { FormLogin } from '@organisms';
+import { RightContent } from '@organisms';
 import * as S from './Login.style';
 
 export const LoginPage: React.FC = () => {
@@ -9,9 +10,16 @@ export const LoginPage: React.FC = () => {
   return (
     <S.Container>
       <S.LeftSide>
-        <FormLogin />
+        <div>
+          <img src="/logo.svg" style={{ marginBottom: `44px` }} />
+          <FormLogin />
+        </div>
       </S.LeftSide>
-      <S.RightSide>s</S.RightSide>
+      <S.RightSide>
+        <div>
+          <img src="/logo.svg" />
+        </div>
+      </S.RightSide>
     </S.Container>
   );
 };
