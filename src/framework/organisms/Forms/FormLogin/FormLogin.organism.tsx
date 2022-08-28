@@ -25,7 +25,7 @@ export const FormLogin: React.FC<FormLoginProps> = ({
         <InputInLabel label="E-mail" onChange={handleChange} placeholder="Digite aqui" value="" style={{marginBottom: `16px`}} />
         <InputInLabel label="Senha" onChange={handleChange} placeholder="Digite aqui" value="" />
       </div>
-      <div style={{marginTop: `40px`}}>
+      <div style={{margin: `40px 0`}}>
         <Button label={buttonLoginText} type="submit" onClick={handleChange} variant="primary" />
         <Button label={buttonRegisterText} onClick={handleChange} variant="secondary" style={{margin: `16px 0`}} />
         <Button label={buttonForgotPasswordText} onClick={handleChange} variant="text" />

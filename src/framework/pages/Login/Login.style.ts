@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  height: 100%;
-  div: first-child {
+  height: 963px;
+  div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,16 +12,15 @@ export const Container = styled.div`
 `;
 
 export const LeftSide = styled.div`
+  padding: 40px 0;
   width: 473px;
 `;
 export const RightSide = styled.div`
+  height: 100%;
   background-color: #B8DFFD;
   background-position: bottom right;
   background-repeat: no-repeat;
   background-image: url('/backgroundRight.svg'), url('/wave.svg');
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: calc(100vw - 473px);
   padding: 32px;
 
