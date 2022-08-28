@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  height: 963px;
+  height: 100%;
   div {
     display: flex;
     align-items: center;
@@ -12,7 +12,6 @@ export const Container = styled.div`
 `;
 
 export const LeftSide = styled.div`
-  padding: 40px 0;
   width: 473px;
 `;
 export const RightSide = styled.div`

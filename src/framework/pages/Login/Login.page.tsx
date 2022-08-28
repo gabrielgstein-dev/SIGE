@@ -11,7 +11,7 @@ export const LoginPage: React.FC = () => {
     <S.Container>
       <S.LeftSide>
         <div>
-          <img src="/logo.svg" style={{ marginBottom: `44px` }} />
+          <img src="/logo.svg" style={{ marginBottom: `44px`, width: `146.64px`, height: `166.17px` }} />
           <FormLogin />
         </div>
       </S.LeftSide>
