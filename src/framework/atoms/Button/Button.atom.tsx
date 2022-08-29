@@ -1,21 +1,25 @@
 import React from 'react';
 import * as S from './Button.style';
 
-import { ButtonProps } from './Button.interface';
+import { ButtonProps, VariantButtonEnum, VariantButtonType } from './Button.interface';
 
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   onClick,
   label,
   disabled,
   leftIcon,
   rightIcon,
   variant,
+  type,
+  ...props
 }) => {
   return (
-    <S.Button disabled={disabled} onClick={onClick} variant={variant}>
+    <S.Button {...props} type={type} disabled={disabled} onClick={onClick} variant={variant}>
       {leftIcon && <S.LeftIconContainer>{leftIcon}</S.LeftIconContainer>}
       {label}
       {rightIcon && <S.RightIconContainer>{rightIcon}</S.RightIconContainer>}
     </S.Button>
   );
 };
+export { Button, VariantButtonEnum };
+export type { VariantButtonType };

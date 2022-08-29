@@ -5,19 +5,21 @@ export const Container = styled.div`
   height: 100%;
 `;
 
-export const LeftSide = styled.div`
-  border: 1px solid red;
-  flex-grow: 1;
+export const LeftSideContainer = styled.div`
+  width: 30%;
+  padding: 4%;
 `;
+
 export const RightSide = styled.div`
-  border: 1px solid blue;
-
   background-color: #b8dffd;
-  flex-grow: 2;
-`;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-image: url('/backgroundRight.svg'), url('/wave.svg');
+  background-size: contain;
+  width: 70%;
 
-export const CustomLabel = styled.div`
-  color: purple;
-  font-size: 22px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
 `;

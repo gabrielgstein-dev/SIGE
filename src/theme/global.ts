@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+      @import url('http://fonts.cdnfonts.com/css/futura-pt');
+
       * {
         margin: 0;
         padding: 0;
@@ -10,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
 
         font-family: Inter, 'Times New Roman', Times, serif;
-        font-size: 14px;
+        font-size: 16px;
 
         &::before,
         &::after {

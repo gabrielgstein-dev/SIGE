@@ -3,4 +3,5 @@ export interface InputProps {
   value: string;
   placeholder?: string;
   disabled?: boolean;
+  style?: React.CSSProperties;
 }
