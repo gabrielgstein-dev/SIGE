@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
 
         font-family: Inter, 'Times New Roman', Times, serif;
-        font-size: 14px;
+        font-size: 16px;
 
         &::before,
         &::after {

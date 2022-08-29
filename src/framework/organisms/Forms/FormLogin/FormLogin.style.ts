@@ -1,11 +1,13 @@
-import styled, { css } from "styled-components";
+import styled from 'styled-components';
 
 export const FormContainer = styled.form`
-  ${({ }) => css`
-    margin: auto 64px;
+  width: 100%;
+`;
 
-    h1, p {
-        text-align: center;
-    }
-  `}
+export const InputFormContainer = styled.div`
+  margin-bottom: 5%;
+`;
+
+export const ButtonContainer = styled.div`
+  margin-top: 8%;
 `;

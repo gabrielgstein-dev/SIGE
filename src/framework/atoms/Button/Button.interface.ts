@@ -6,7 +6,7 @@ export enum VariantButtonEnum {
   SMALL_SECONDARY = 'small-secondary',
   SMALL_TEXT = 'small-text',
 }
-export type VariantType =
+export type VariantButtonType =
   | VariantButtonEnum.PRIMARY
   | VariantButtonEnum.SECONDARY
   | VariantButtonEnum.TEXT
@@ -15,14 +15,14 @@ export type VariantType =
   | VariantButtonEnum.SMALL_TEXT;
 
 export interface ButtonInternalProps {
-  variant?: VariantType;
-  disabled?: boolean;
+  variant?: VariantButtonType;
 }
 
-export interface ButtonProps extends React.Component<HTMLButtonElement>, ButtonInternalProps {
-  onClick: () => void;
+export interface ButtonProps extends ButtonInternalProps {
+  onClick?: () => void;
   label?: string;
-  style?: React.CSSProperties;
   leftIcon?: React.ReactNode;
   rightIcon?: React.ReactNode;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }

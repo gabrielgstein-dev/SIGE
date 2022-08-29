@@ -1,6 +1,6 @@
 import React from 'react';
-import { FormLogin } from '@organisms';
-import { RightContent } from '@organisms';
+import { BigLogo } from '@atoms';
+import { LoginBanner } from '@templates';
 import * as S from './Login.style';
 
 export const LoginPage: React.FC = () => {
@@ -9,16 +9,11 @@ export const LoginPage: React.FC = () => {
   };
   return (
     <S.Container>
-      <S.LeftSide>
-        <div>
-          <img src="/logo.svg" style={{ marginBottom: `44px` }} />
-          <FormLogin />
-        </div>
-      </S.LeftSide>
+      <S.LeftSideContainer>
+        <LoginBanner />
+      </S.LeftSideContainer>
       <S.RightSide>
-        <div>
-          <img src="/logo.svg" />
-        </div>
+        <BigLogo />
       </S.RightSide>
     </S.Container>
   );

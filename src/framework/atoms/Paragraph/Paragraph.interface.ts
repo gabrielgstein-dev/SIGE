@@ -1,4 +1,4 @@
 export interface ParagraphProps extends React.HTMLAttributes<HTMLParagraphElement> {
-    size?: number;
-  }
-  
+  size?: string | number;
+  textAlign?: 'start' | 'end' | 'left' | 'right' | 'center' | 'justify' | 'match-parent';
+}
