@@ -19,14 +19,14 @@ export const InputInLabel: React.FC<InputInLabelProps> = ({
 
   return (
     <S.LabelContainer>
-        {label}
-        <Input
-            placeholder={placeholder}
-            value={value}
-            onChange={handleChange}
-            disabled={disabled}
-            style={style}
-            />
+      {label}
+      <Input
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange}
+        disabled={disabled}
+        style={style}
+      />
     </S.LabelContainer>
   );
 };
