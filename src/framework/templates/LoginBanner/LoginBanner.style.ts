@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const HeaderContainer = styled.div`
   text-align: center;
 
-  margin-top: 4%;
+  margin-top: 10%;
 `;
 
 export const TitleContainer = styled.div`
@@ -18,7 +18,7 @@ export const TitleContainer = styled.div`
 export const SubTitleContainer = styled.div``;
 
 export const FormContainer = styled.div`
-  margin-top: 15%;
+  margin-top: 12%;
 `;
 
 export const Image = styled.img`

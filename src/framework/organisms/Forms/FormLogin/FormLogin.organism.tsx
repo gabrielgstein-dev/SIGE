@@ -22,7 +22,11 @@ export const FormLogin: React.FC<FormLoginProps> = ({
     });
   }
 
-  const handleSubmit = () => onSubmit(form);
+  const handleSubmit = (evt: React.SyntheticEvent) => {
+    evt.stopPropagation();
+    evt.preventDefault();
+    onSubmit(form);
+  };
   return (
     <S.FormContainer onSubmit={handleSubmit} action={action}>
       <S.InputFormContainer>

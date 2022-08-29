@@ -7,12 +7,7 @@ export const Container = styled.div`
 
 export const LeftSideContainer = styled.div`
   width: 30%;
-  padding: 0 4%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: row wrap;
+  padding: 4%;
 `;
 
 export const RightSide = styled.div`

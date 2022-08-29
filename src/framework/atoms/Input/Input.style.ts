@@ -5,6 +5,6 @@ export const Input = styled.input`
     height: 6vh;
     width: 100%;
     outline: 0;
-    font-size: 1.2vw;
+    font-size: 0.9vw;
   `}
 `;

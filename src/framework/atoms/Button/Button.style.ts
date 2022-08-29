@@ -10,8 +10,8 @@ export const getVariant = (variant: VariantButtonType) => {
       v === VariantButtonEnum.TEXT
     ) {
       return css`
-        padding: 4% 0px;
-        font-size: 1.1vw;
+        padding: 3% 0px;
+        font-size: 0.9vw;
       `;
     } else if (
       v === VariantButtonEnum.SMALL_PRIMARY ||
@@ -19,8 +19,8 @@ export const getVariant = (variant: VariantButtonType) => {
       v === VariantButtonEnum.SMALL_TEXT
     ) {
       return css`
-        padding: 3% 0px;
-        font-size: 1vw;
+        padding: 2% 0px;
+        font-size: 0.8vw;
       `;
     }
   };
