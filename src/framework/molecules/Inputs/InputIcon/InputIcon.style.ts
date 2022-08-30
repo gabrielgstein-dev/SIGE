@@ -20,7 +20,7 @@ export const InputContainer = styled.div<{ adaptLeftSideIcon: boolean }>`
 
 export const LabelContainer = styled.div`
   ${({ theme }) => css`
-    font-size: 15px;
+    font-size: 0.9375em;
     font-weight: 600;
     color: ${theme.palette.dark.tint};
   `}
