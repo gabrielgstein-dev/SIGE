@@ -5,6 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { RecoilRoot } from 'recoil';
 
 function App() {
+  console.log(process.env.enviroment);
   return (
     <RecoilRoot>
       <Router>
