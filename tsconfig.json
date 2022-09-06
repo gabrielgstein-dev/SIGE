@@ -33,7 +33,12 @@
       "@organisms": ["src/framework/organisms"],
       "@organisms/*": ["src/framework/organisms/*"],
       "@templates": ["src/framework/templates"],
-      "@templates/*": ["src/framework/templates/*"]
+      "@templates/*": ["src/framework/templates/*"],
+      "@service/*": ["src/service/*"],
+      "@service": ["src/service"],
+      "@recoil": ["src/recoil"],
+      "@recoil/*": ["src/recoil/*"],
+      "@hooks": ["src/hooks"]
     }
   },
   "include": ["vite.config.ts", "styled.d.ts", "**/*.ts", "**/*.tsx"],

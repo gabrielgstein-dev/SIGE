@@ -1,14 +1,19 @@
+import { RequestAuthUser } from '~/models/datacore/RequestAuthUser';
 import { callApiBaseAsync } from './_base';
 
-export const loginApiService = async (data: unknown) => {
-  const endpoint = process.env.REACT_APP_API_URL_RESERVE_FUNDS;
+const endpoint = '/login';
 
-  return callApiBaseAsync(`${endpoint}`, {
-    title: 'RESERVE FUNDS - requestReserveFundsTradeAsync',
-    method: 'POST',
-    headers: new Headers({
-      device: '',
-    }),
-    body: data,
-  });
+export const loginApiService = async (data: RequestAuthUser) => {
+  return {
+    success: true,
+    data: {
+      token: 'token',
+    },
+  };
+  // return callApiBaseAsync(`${endpoint}`, {
+  //   title: 'LOGIN API - loginApiService',
+  //   method: 'POST',
+  //   headers: new Headers(),
+  //   body: data,
+  // });
 };
