@@ -3,7 +3,6 @@ import { ButtonInternalProps, VariantButtonType, VariantButtonEnum } from './But
 
 export const getVariant = (variant: VariantButtonType) => {
   const buttonStyle = (v = variant) => {
-    console.log(v);
     if (
       v === VariantButtonEnum.PRIMARY ||
       v === VariantButtonEnum.SECONDARY ||

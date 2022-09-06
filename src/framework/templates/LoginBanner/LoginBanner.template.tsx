@@ -4,22 +4,24 @@ import { Button, Paragraph, Title, VariantButtonEnum } from '@atoms';
 import { LeftSideLoginProps } from './LoginBanner.interface';
 
 import * as S from './LoginBanner.style';
+import { RequestAuthUser } from '~/models/datacore/RequestAuthUser';
 
 export const LoginBanner: React.FC<LeftSideLoginProps> = ({
   buttonRegisterText = 'Cadastrar-se',
   buttonForgotPasswordText = 'Esqueci a senha',
   title = 'Entre ou cadastre-se',
   paragraph = 'Digite seus dados cadastrais para realizar seu login',
+  submitLoginForm,
 }) => {
   const handleClickRegisterButton = () => {
-    console.log('click');
+    console.log('Register');
   };
   const handleClickForgotPasswordButton = () => {
-    console.log('click');
+    console.log('Forgot Password');
   };
 
-  const handleSubmitForm = (values: { username: string; password: string }) => {
-    console.log(values);
+  const handleSubmitForm = (values: RequestAuthUser) => {
+    submitLoginForm(values);
   };
 
   return (

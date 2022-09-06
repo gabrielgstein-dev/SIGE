@@ -2,15 +2,19 @@ import { ThemeProvider } from 'styled-components';
 import { Gateway } from './routes';
 import { GlobalStyles, theme } from '@theme';
 import { BrowserRouter as Router } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 
 function App() {
+  console.log(process.env.enviroment);
   return (
-    <Router>
-      <GlobalStyles />
-      <ThemeProvider theme={theme}>
-        <Gateway />
-      </ThemeProvider>
-    </Router>
+    <RecoilRoot>
+      <Router>
+        <GlobalStyles />
+        <ThemeProvider theme={theme}>
+          <Gateway />
+        </ThemeProvider>
+      </Router>
+    </RecoilRoot>
   );
 }
 
